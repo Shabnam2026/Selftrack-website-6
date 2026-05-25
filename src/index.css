@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand colour: #9ACA3C Palette */
+  --color-primary-50: #f8fbf1;
+  --color-primary-100: #ecf5dc;
+  --color-primary-200: #dce8c4;
+  --color-primary-300: #c1d999;
+  --color-primary-400: #a7c86a;
+  --color-primary-500: #9ACA3C;
+  --color-primary-600: #7ca82b;
+  --color-primary-700: #5f8222;
+  --color-primary-800: #4c661e;
+  --color-primary-900: #3d501a;
+  
+  /* Override emerald to match brand colour since many components use it */
+  --color-emerald-50: #f8fbf1;
+  --color-emerald-100: #ecf5dc;
+  --color-emerald-200: #dce8c4;
+  --color-emerald-300: #c1d999;
+  --color-emerald-400: #a7c86a;
+  --color-emerald-500: #9ACA3C;
+  --color-emerald-600: #7ca82b;
+  --color-emerald-700: #5f8222;
+  --color-emerald-800: #4c661e;
+  --color-emerald-900: #3d501a;
+  
+  /* Override default blue/purple used in checklist UI to match brand design */
+  --color-blue-50: #f8fbf1;
+  --color-blue-500: #9ACA3C;
+  --color-blue-600: #7ca82b;
+  --color-purple-500: #9ACA3C;
+
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Space Grotesk", sans-serif;
+}
+
+/* Custom styles */
+body {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Scrollbar styles for plan cards */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+.scrollbar-thumb-gray-300::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 213, 219);
+  border-radius: 9999px;
+}
+.scrollbar-track-transparent::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
